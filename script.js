@@ -18,14 +18,15 @@ function compute()
 
     //Setting time into current date plus number of years
     var year = new Date().getFullYear()+parseInt(years);
-
+    
+    //Provide message to user on total interest amount for the time and amount specified
     document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
     
 }
 
 function updateRate()
 {
-    console.log("HERE working");
+    //Updating the value from the slider to show the one selected by user
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
 }
